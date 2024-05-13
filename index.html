@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>VR Experience</title>
+    <script src=https://aframe.io/releases/1.0.3/aframe.min.js></script>
+    <script src=//unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-entity id="rig" movement-controls >
+            <a-entity camera look-controls="pointerLockEnabled: true;" position="0 1.8 5"></a-entity>
+        </a-entity>
+        <a-sky src="Sky.png"></a-sky>
+        <a-plane color="#1d282f " rotation="-90 0 0" width="150" height="150"></a-plane>
+        <a-gltf-model src="ferriswheeltextures/scene.gltf" scale="1.5 1.5 1.5" position="0.3 0 -26.6" animation-mixer></a-gltf-model>
+        <a-gltf-model src="epcot_futureworld_-_disney_world_theme_park_-_vr/scene.gltf" scale="0.5 0.5 0.5" position="0 0 0" animation-mixer></a-gltf-model>
+        <a-gltf-model src="group_of_people/scene.gltf" scale="0.025 0.025 0.025" position="-6.392 0.622 50.221" animation-mixer></a-gltf-model>
+    </a-scene>
+</body>
+</html>
